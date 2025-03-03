@@ -1,5 +1,8 @@
-let a = Number(prompt("Mời bạn nhập giá trị cuả số a"));
-let b = Number(prompt("Mời bạn nhập giá trị cuả số b"));
-let c = Number(prompt("Mời bạn nhập giá trị cuả số c"));
-let result = Math.max(a, b, c );
-alert(`Số lớn nhất trong ba số bạn vừa nhập là ${result}`);
+let a = parseFloat(prompt("Nhập số thứ nhất:"));
+let b = parseFloat(prompt("Nhập số thứ hai:"));
+let c = parseFloat(prompt("Nhập số thứ ba:"));
+
+let max = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+
+console.log(`Số lớn nhất trong 3 số là ${max}`);
+alert(`Số lớn nhất trong 3 số là ${max}`);
